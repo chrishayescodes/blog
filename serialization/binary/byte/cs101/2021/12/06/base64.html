@@ -9,20 +9,20 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="To understand “base 64” you will have to have a cursory understanding of what a mathematical “base” is and a VERY basic understanding of computer science. When you count to 10, 1,2,3,4, 5,6,7,8,9,10 you are using base 10 numbers. Each time you reach the end of possible digits you move upa ‘power’ and go to 10, 100, 1000 etcetera. Computers use base 2 numbers to do math because computers are electronics and the basic way to represent a number in electronics is by having electric current or not. On and off for computers is 1 and 0 respectively and computers work with these base 2 numbers or as you may more commonly know them “binary” numbers." />
 <meta property="og:description" content="To understand “base 64” you will have to have a cursory understanding of what a mathematical “base” is and a VERY basic understanding of computer science. When you count to 10, 1,2,3,4, 5,6,7,8,9,10 you are using base 10 numbers. Each time you reach the end of possible digits you move upa ‘power’ and go to 10, 100, 1000 etcetera. Computers use base 2 numbers to do math because computers are electronics and the basic way to represent a number in electronics is by having electric current or not. On and off for computers is 1 and 0 respectively and computers work with these base 2 numbers or as you may more commonly know them “binary” numbers." />
-<link rel="canonical" href="https://chrishayescodes.github.io/blog//serialization/binary/byte/cs101/2021/12/06/base64.html" />
-<meta property="og:url" content="https://chrishayescodes.github.io/blog//serialization/binary/byte/cs101/2021/12/06/base64.html" />
+<link rel="canonical" href="https://chrishayescodes.github.io/blog/serialization/binary/byte/cs101/2021/12/06/base64.html" />
+<meta property="og:url" content="https://chrishayescodes.github.io/blog/serialization/binary/byte/cs101/2021/12/06/base64.html" />
 <meta property="og:site_name" content="chrishayescodes" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2021-12-06T17:15:00-08:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="base 64" />
 <script type="application/ld+json">
-{"url":"https://chrishayescodes.github.io/blog//serialization/binary/byte/cs101/2021/12/06/base64.html","headline":"base 64","dateModified":"2021-12-06T17:15:00-08:00","datePublished":"2021-12-06T17:15:00-08:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://chrishayescodes.github.io/blog//serialization/binary/byte/cs101/2021/12/06/base64.html"},"description":"To understand “base 64” you will have to have a cursory understanding of what a mathematical “base” is and a VERY basic understanding of computer science. When you count to 10, 1,2,3,4, 5,6,7,8,9,10 you are using base 10 numbers. Each time you reach the end of possible digits you move upa ‘power’ and go to 10, 100, 1000 etcetera. Computers use base 2 numbers to do math because computers are electronics and the basic way to represent a number in electronics is by having electric current or not. On and off for computers is 1 and 0 respectively and computers work with these base 2 numbers or as you may more commonly know them “binary” numbers.","@context":"https://schema.org"}</script>
+{"url":"https://chrishayescodes.github.io/blog/serialization/binary/byte/cs101/2021/12/06/base64.html","headline":"base 64","dateModified":"2021-12-06T17:15:00-08:00","datePublished":"2021-12-06T17:15:00-08:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://chrishayescodes.github.io/blog/serialization/binary/byte/cs101/2021/12/06/base64.html"},"description":"To understand “base 64” you will have to have a cursory understanding of what a mathematical “base” is and a VERY basic understanding of computer science. When you count to 10, 1,2,3,4, 5,6,7,8,9,10 you are using base 10 numbers. Each time you reach the end of possible digits you move upa ‘power’ and go to 10, 100, 1000 etcetera. Computers use base 2 numbers to do math because computers are electronics and the basic way to represent a number in electronics is by having electric current or not. On and off for computers is 1 and 0 respectively and computers work with these base 2 numbers or as you may more commonly know them “binary” numbers.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://chrishayescodes.github.io/blog//feed.xml" title="chrishayescodes" /></head>
+<link rel="stylesheet" href="/blog/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://chrishayescodes.github.io/blog/feed.xml" title="chrishayescodes" /></head>
 <body><header class="site-header" role="banner">
 
-  <div class="wrapper"><a class="site-title" rel="author" href="/">chrishayescodes</a><nav class="site-nav">
+  <div class="wrapper"><a class="site-title" rel="author" href="/blog/">chrishayescodes</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
@@ -32,14 +32,14 @@
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+        <div class="trigger"><a class="page-link" href="/blog/about/">About</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-    <link rel="stylesheet" href="https://chrishayescodes.github.io/blog//assets/BetterTube.css"/>
-    <script src="https://chrishayescodes.github.io/blog//assets/BetterTube.js"></script>
+    <link rel="stylesheet" href="https://chrishayescodes.github.io/assets/BetterTube.css"/>
+    <script src="https://chrishayescodes.github.io/assets/BetterTube.js"></script>
   <header class="post-header">
     <h1 class="post-title p-name" itemprop="name headline">base 64</h1>
     <p class="post-meta"><time class="dt-published" datetime="2021-12-06T17:15:00-08:00" itemprop="datePublished">
@@ -71,12 +71,12 @@
 
 <p>This is why base 64 is important.</p>
 
-  </div><a class="u-url" href="/serialization/binary/byte/cs101/2021/12/06/base64.html" hidden></a>
+  </div><a class="u-url" href="/blog/serialization/binary/byte/cs101/2021/12/06/base64.html" hidden></a>
 </article>
 
       </div>
     </main><footer class="site-footer h-card">
-  <data class="u-url" href="/"></data>
+  <data class="u-url" href="/blog/"></data>
 
   <div class="wrapper">
 
@@ -88,7 +88,7 @@
           <li class="p-name">chrishayescodes</li><li><a class="u-email" href="mailto:chrishayescodes.com">chrishayescodes.com</a></li></ul>
       </div>
 
-      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/chrishayescodes"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">chrishayescodes</span></a></li><li><a href="https://www.twitter.com/chrishayescodes"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">chrishayescodes</span></a></li></ul>
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/chrishayescodes"><svg class="svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#github"></use></svg> <span class="username">chrishayescodes</span></a></li><li><a href="https://www.twitter.com/chrishayescodes"><svg class="svg-icon"><use xlink:href="/blog/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">chrishayescodes</span></a></li></ul>
 </div>
 
       <div class="footer-col footer-col-3">
