@@ -7,8 +7,8 @@
 <meta name="generator" content="Jekyll v4.2.1" />
 <meta property="og:title" content="base 64" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="To understand “base 64” you will have to have a cursory understanding of what a mathematical “base” is and a VERY basic understanding of computer science. When you count to 10, 1,2,3,4, 5,6,7,8,9,10 you are using base 10 numbers. Each time you reach the end of possible digits you move upa ‘power’ and go to 10, 100, 1000 etcetera. Computers use base 2 numbers to do math because computers are electronics and the basic way to represent a number in electronics is by having electric current or not. On and off for computers is 1 and 0 respectively and computers work with these base 2 numbers or as you may more commonly know them “binary” numbers." />
-<meta property="og:description" content="To understand “base 64” you will have to have a cursory understanding of what a mathematical “base” is and a VERY basic understanding of computer science. When you count to 10, 1,2,3,4, 5,6,7,8,9,10 you are using base 10 numbers. Each time you reach the end of possible digits you move upa ‘power’ and go to 10, 100, 1000 etcetera. Computers use base 2 numbers to do math because computers are electronics and the basic way to represent a number in electronics is by having electric current or not. On and off for computers is 1 and 0 respectively and computers work with these base 2 numbers or as you may more commonly know them “binary” numbers." />
+<meta name="description" content="TL;DR Base 64 Encoding is turning binary data into a string that can be shared over the wire." />
+<meta property="og:description" content="TL;DR Base 64 Encoding is turning binary data into a string that can be shared over the wire." />
 <link rel="canonical" href="https://chrishayescodes.github.io/blog/cs101/2021/12/06/base64.html" />
 <meta property="og:url" content="https://chrishayescodes.github.io/blog/cs101/2021/12/06/base64.html" />
 <meta property="og:site_name" content="chrishayescodes" />
@@ -17,7 +17,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="base 64" />
 <script type="application/ld+json">
-{"url":"https://chrishayescodes.github.io/blog/cs101/2021/12/06/base64.html","headline":"base 64","dateModified":"2021-12-06T17:15:00-08:00","datePublished":"2021-12-06T17:15:00-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://chrishayescodes.github.io/blog/cs101/2021/12/06/base64.html"},"@type":"BlogPosting","description":"To understand “base 64” you will have to have a cursory understanding of what a mathematical “base” is and a VERY basic understanding of computer science. When you count to 10, 1,2,3,4, 5,6,7,8,9,10 you are using base 10 numbers. Each time you reach the end of possible digits you move upa ‘power’ and go to 10, 100, 1000 etcetera. Computers use base 2 numbers to do math because computers are electronics and the basic way to represent a number in electronics is by having electric current or not. On and off for computers is 1 and 0 respectively and computers work with these base 2 numbers or as you may more commonly know them “binary” numbers.","@context":"https://schema.org"}</script>
+{"url":"https://chrishayescodes.github.io/blog/cs101/2021/12/06/base64.html","headline":"base 64","dateModified":"2021-12-06T17:15:00-08:00","datePublished":"2021-12-06T17:15:00-08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://chrishayescodes.github.io/blog/cs101/2021/12/06/base64.html"},"@type":"BlogPosting","description":"TL;DR Base 64 Encoding is turning binary data into a string that can be shared over the wire.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://chrishayescodes.github.io/blog/feed.xml" title="chrishayescodes" /><link rel="stylesheet" href="/assets/BetterTube.css"/>
 <script src="/assets/BetterTube.js"></script>
@@ -49,7 +49,9 @@
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <p>To understand “base 64” you will have to have a cursory understanding of what a mathematical “base” is and a VERY basic understanding of computer science. When you count to 10, 1,2,3,4, 5,6,7,8,9,10 you are using base 10 numbers. Each time you reach the end of possible digits you move upa ‘power’ and go to 10, 100, 1000 etcetera. Computers use base 2 numbers to do math because computers are electronics and the basic way to represent a number in electronics is by having electric current or not. On and off for computers is 1 and 0 respectively and computers work with these base 2 numbers or as you may more commonly know them “binary” numbers.</p>
+    <p><strong>TL;DR</strong> Base 64 Encoding is turning binary data into a string that can be shared over the wire.</p>
+
+<p>To understand “base 64” you will have to have a cursory understanding of what a mathematical “base” is and a VERY basic understanding of computer science. When you count to 10, 1,2,3,4, 5,6,7,8,9,10 you are using base 10 numbers. Each time you reach the end of possible digits you move upa ‘power’ and go to 10, 100, 1000 etcetera. Computers use base 2 numbers to do math because computers are electronics and the basic way to represent a number in electronics is by having electric current or not. On and off for computers is 1 and 0 respectively and computers work with these base 2 numbers or as you may more commonly know them “binary” numbers.</p>
 
 <figure class="BetterTube" data-youtube-id="LpuPe81bc2w" data-player-width="560" data-player-height="315" id="LpuPe81bc2w" style="padding-bottom: 56.25%"><a class="BetterTubePlayer" href="http://www.youtube.com/watch?v=a_426RiwST8" style="background: url(http://img.youtube.com/vi/LpuPe81bc2w/hqdefault.jpg) 50% 50% no-repeat rgb(0, 0, 0);">&nbsp;</a><div class="BetterTube-playBtn"></div>&nbsp;</figure>
 
