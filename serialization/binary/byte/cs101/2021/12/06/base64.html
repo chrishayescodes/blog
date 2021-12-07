@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>base 64 | chrishayescodes</title>
+<meta name="generator" content="Jekyll v4.2.1" />
+<meta property="og:title" content="base 64" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="To understand “base 64” you will have to have a cursory understanding of what a mathematical “base” is and a VERY basic understanding of computer science. When you count to 10, 1,2,3,4, 5,6,7,8,9,10 you are using base 10 numbers. Each time you reach the end of possible digits you move upa ‘power’ and go to 10, 100, 1000 etcetera. Computers use base 2 numbers to do math because computers are electronics and the basic way to represent a number in electronics is by having electric current or not. On and off for computers is 1 and 0 respectively and computers work with these base 2 numbers or as you may more commonly know them “binary” numbers." />
+<meta property="og:description" content="To understand “base 64” you will have to have a cursory understanding of what a mathematical “base” is and a VERY basic understanding of computer science. When you count to 10, 1,2,3,4, 5,6,7,8,9,10 you are using base 10 numbers. Each time you reach the end of possible digits you move upa ‘power’ and go to 10, 100, 1000 etcetera. Computers use base 2 numbers to do math because computers are electronics and the basic way to represent a number in electronics is by having electric current or not. On and off for computers is 1 and 0 respectively and computers work with these base 2 numbers or as you may more commonly know them “binary” numbers." />
+<link rel="canonical" href="http://localhost:4000/serialization/binary/byte/cs101/2021/12/06/base64.html" />
+<meta property="og:url" content="http://localhost:4000/serialization/binary/byte/cs101/2021/12/06/base64.html" />
+<meta property="og:site_name" content="chrishayescodes" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-12-06T17:15:00-08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="base 64" />
+<script type="application/ld+json">
+{"url":"http://localhost:4000/serialization/binary/byte/cs101/2021/12/06/base64.html","headline":"base 64","dateModified":"2021-12-06T17:15:00-08:00","datePublished":"2021-12-06T17:15:00-08:00","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/serialization/binary/byte/cs101/2021/12/06/base64.html"},"description":"To understand “base 64” you will have to have a cursory understanding of what a mathematical “base” is and a VERY basic understanding of computer science. When you count to 10, 1,2,3,4, 5,6,7,8,9,10 you are using base 10 numbers. Each time you reach the end of possible digits you move upa ‘power’ and go to 10, 100, 1000 etcetera. Computers use base 2 numbers to do math because computers are electronics and the basic way to represent a number in electronics is by having electric current or not. On and off for computers is 1 and 0 respectively and computers work with these base 2 numbers or as you may more commonly know them “binary” numbers.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="chrishayescodes" /></head>
+<body><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">chrishayescodes</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/about/">About</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+    <link rel="stylesheet" href="http://localhost:4000/assets/BetterTube.css"/>
+    <script src="http://localhost:4000/assets/BetterTube.js"></script>
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">base 64</h1>
+    <p class="post-meta"><time class="dt-published" datetime="2021-12-06T17:15:00-08:00" itemprop="datePublished">
+        Dec 6, 2021
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>To understand “base 64” you will have to have a cursory understanding of what a mathematical “base” is and a VERY basic understanding of computer science. When you count to 10, 1,2,3,4, 5,6,7,8,9,10 you are using base 10 numbers. Each time you reach the end of possible digits you move upa ‘power’ and go to 10, 100, 1000 etcetera. Computers use base 2 numbers to do math because computers are electronics and the basic way to represent a number in electronics is by having electric current or not. On and off for computers is 1 and 0 respectively and computers work with these base 2 numbers or as you may more commonly know them “binary” numbers.</p>
+
+<figure class="BetterTube" data-youtube-id="LpuPe81bc2w" data-player-width="560" data-player-height="315" id="LpuPe81bc2w" style="padding-bottom: 56.25%"><a class="BetterTubePlayer" href="http://www.youtube.com/watch?v=a_426RiwST8" style="background: url(http://img.youtube.com/vi/LpuPe81bc2w/hqdefault.jpg) 50% 50% no-repeat rgb(0, 0, 0);">&nbsp;</a><div class="BetterTube-playBtn"></div>&nbsp;</figure>
+
+<figure class="BetterTube" data-youtube-id="1GSjbWt0c9M" data-player-width="560" data-player-height="315" id="1GSjbWt0c9M" style="padding-bottom: 56.25%"><a class="BetterTubePlayer" href="http://www.youtube.com/watch?v=a_426RiwST8" style="background: url(http://img.youtube.com/vi/1GSjbWt0c9M/hqdefault.jpg) 50% 50% no-repeat rgb(0, 0, 0);">&nbsp;</a><div class="BetterTube-playBtn"></div>&nbsp;</figure>
+
+<p>So we have base 10, how we count, base 2 or binary how computers count. There are an infinite number of other ways to represent numbers such as base 3,4,5 etc. Such as base 16 or hexadecimal, you may have seen this with CSS colors #FFFFFF is a hexadecimal number, they use the following numbers and letters to represent a value between 0 and 15, 0123456789ABCDEF.</p>
+
+<p>There’s something very special about numbers that are powers of 2 when it comes to computers. Maybe you’ve heard of 8 bit computers? Or how about 32 bit and 64 bit computing. Computers operate off of numbers that can be represented in binary and up to a certain size. With an 8 bit computer numbers could only be represented up to a base 2 number or binary number that had a total of 8 places. So the smallest positive number any binary number can represent is 0 zero. Consider that computers work with what are basically on and off switches to represent numbers. The most simple numbers to represent with one on and off switch would be 0 zero and 1 one. So a ONE bit operating system could only represent numbers from zero to one. Not very exciting. With two on and off switches you could represent 0, 1, 2, and 3. Binary numbers for this sequence are 00, 01, 10, 11. Those are all the numbers you can represent with two bits. 4 bits, 0000, to 1111 would be 0 to 15 in decimal or base 10. Now think of 8 bits 00000000 to 11111111 which is 0 to 255. A 32 bit operating system works with numbers that have 32 places of either 1’s or 0’s. So now powers of 2: 2,4,8,16,32,64. each doubling in size each step up. Computers are designed to store numbers in what are called bytes which are 8 bit in size each. so every number that a computer stores is comprised of individual 8 bit pieces in sizes up to the operating system bit size, 32 or 64 for common modern computers. Since we need to store bytes or 8 bit numbers for computers to work with then any numbering system that plays well with 8 bit pieces would be ideal. Enter base 64.</p>
+
+<figure class="BetterTube" data-youtube-id="aUdKd0IFl34" data-player-width="560" data-player-height="315" id="aUdKd0IFl34" style="padding-bottom: 56.25%"><a class="BetterTubePlayer" href="http://www.youtube.com/watch?v=a_426RiwST8" style="background: url(http://img.youtube.com/vi/aUdKd0IFl34/hqdefault.jpg) 50% 50% no-repeat rgb(0, 0, 0);">&nbsp;</a><div class="BetterTube-playBtn"></div>&nbsp;</figure>
+
+<p>Then there’s base 64, any number can be represented using 64 unique characters. Well, all that to say, any computer value that is stored in binary, or base 2 can be converted to base64. The reason base 64 is used is because text is the primary way data is exchanged BETWEEN computers. HTTP, hypertext transfer protocol, sends data around primarily as text. So what better way to pass binary data around then as a base64 string that can be deserialized as binary data?</p>
+
+<p>Understanding serialization:</p>
+<figure class="BetterTube" data-youtube-id="uS37TujnLRw" data-player-width="560" data-player-height="315" id="uS37TujnLRw" style="padding-bottom: 56.25%"><a class="BetterTubePlayer" href="http://www.youtube.com/watch?v=a_426RiwST8" style="background: url(http://img.youtube.com/vi/uS37TujnLRw/hqdefault.jpg) 50% 50% no-repeat rgb(0, 0, 0);">&nbsp;</a><div class="BetterTube-playBtn"></div>&nbsp;</figure>
+
+<p>We have to please two parties. The computer which likes 8 bit pieces or bytes and the internet which likes text. That’s where base 64 comes in. Base 64 uses a character set of 64 unique characters. <code class="language-plaintext highlighter-rouge">0-9</code>, <code class="language-plaintext highlighter-rouge">a-z</code>, <code class="language-plaintext highlighter-rouge">A-Z</code> and a couple symbols, <code class="language-plaintext highlighter-rouge">+</code> and <code class="language-plaintext highlighter-rouge">/</code>. Each character can be deserialized as an 8 bit piece or byte.</p>
+
+<p>At the end of the day, any binary data can be turned into text and that text can be turned back into data. Computers work with binary data in byte sized chunks, the internet primarily works with text and each base 64 character is one byte in size.</p>
+
+<p>This is why base 64 is important.</p>
+
+  </div><a class="u-url" href="/serialization/binary/byte/cs101/2021/12/06/base64.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">chrishayescodes</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">chrishayescodes</li><li><a class="u-email" href="mailto:chrishayescodes@gmail.com">chrishayescodes@gmail.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/chrishayescodes"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">chrishayescodes</span></a></li><li><a href="https://www.twitter.com/chrishayescodes"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">chrishayescodes</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>This is where I write stuff about coding.</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
