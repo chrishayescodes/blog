@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "Welcome to my blog"
+date:   2021-12-06 16:27:47 -0800
+categories: update
+---
+I'm glad you decided to browse my new blog. Sadly, this is just
+getting started and a long way from anything significant. I'd like
+to use this site to put content related to videos and streams I'm
+planning on doing to augment them.
+
+I've been told many times that my sweet spot is teaching. I've always
+enjoyed sharing information with others and helping them solve 
+problems. I hope you find this content useful.
+
+My early plan is to discuss things I'm learning and trying to break
+that down into smaller bite sized pieces. I want my content to be
+linkable. If I speak about something, I want to have a link to other
+content about that. So, depending on how deep you need to go, there
+will be something there for you.
+
+If you love coding as much as I do then you shouldn't have a problem
+following what I'm talking about. I hope my presentations keep you
+engaged so that you are able to consume the information and be
+able to use it.
+
+Try to always remember that you can't understand everything from the
+beginning and I can't post something about everything from the 
+beginning. If something doesn't make sense feel free to reach out
+on twitter or email. I'll try my best to keep up with the feedback.

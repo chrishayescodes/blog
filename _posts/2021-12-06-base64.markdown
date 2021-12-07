@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "base 64"
+date:   2021-12-06 17:15:00 -0800
+categories: serialization binary byte cs101
+---
+To understand "base 64" you will have to have a cursory understanding of what a mathematical "base" is and a VERY basic understanding of computer science. When you count to 10, 1,2,3,4, 5,6,7,8,9,10 you are using base 10 numbers. Each time you reach the end of possible digits you move upa 'power' and go to 10, 100, 1000 etcetera. Computers use base 2 numbers to do math because computers are electronics and the basic way to represent a number in electronics is by having electric current or not. On and off for computers is 1 and 0 respectively and computers work with these base 2 numbers or as you may more commonly know them "binary" numbers. 
+
+{% youtube LpuPe81bc2w %}
+
+{% youtube 1GSjbWt0c9M %}
+
+So we have base 10, how we count, base 2 or binary how computers count. There are an infinite number of other ways to represent numbers such as base 3,4,5 etc. Such as base 16 or hexadecimal, you may have seen this with CSS colors #FFFFFF is a hexadecimal number, they use the following numbers and letters to represent a value between 0 and 15, 0123456789ABCDEF. 
+
+There's something very special about numbers that are powers of 2 when it comes to computers. Maybe you've heard of 8 bit computers? Or how about 32 bit and 64 bit computing. Computers operate off of numbers that can be represented in binary and up to a certain size. With an 8 bit computer numbers could only be represented up to a base 2 number or binary number that had a total of 8 places. So the smallest positive number any binary number can represent is 0 zero. Consider that computers work with what are basically on and off switches to represent numbers. The most simple numbers to represent with one on and off switch would be 0 zero and 1 one. So a ONE bit operating system could only represent numbers from zero to one. Not very exciting. With two on and off switches you could represent 0, 1, 2, and 3. Binary numbers for this sequence are 00, 01, 10, 11. Those are all the numbers you can represent with two bits. 4 bits, 0000, to 1111 would be 0 to 15 in decimal or base 10. Now think of 8 bits 00000000 to 11111111 which is 0 to 255. A 32 bit operating system works with numbers that have 32 places of either 1's or 0's. So now powers of 2: 2,4,8,16,32,64. each doubling in size each step up. Computers are designed to store numbers in what are called bytes which are 8 bit in size each. so every number that a computer stores is comprised of individual 8 bit pieces in sizes up to the operating system bit size, 32 or 64 for common modern computers. Since we need to store bytes or 8 bit numbers for computers to work with then any numbering system that plays well with 8 bit pieces would be ideal. Enter base 64.
+
+{% youtube aUdKd0IFl34 %}
+
+Then there's base 64, any number can be represented using 64 unique characters. Well, all that to say, any computer value that is stored in binary, or base 2 can be converted to base64. The reason base 64 is used is because text is the primary way data is exchanged BETWEEN computers. HTTP, hypertext transfer protocol, sends data around primarily as text. So what better way to pass binary data around then as a base64 string that can be deserialized as binary data?
+
+Understanding serialization:
+{% youtube uS37TujnLRw %}
+
+We have to please two parties. The computer which likes 8 bit pieces or bytes and the internet which likes text. That's where base 64 comes in. Base 64 uses a character set of 64 unique characters. `0-9`, `a-z`, `A-Z` and a couple symbols, `+` and `/`. Each character can be deserialized as an 8 bit piece or byte.
+
+At the end of the day, any binary data can be turned into text and that text can be turned back into data. Computers work with binary data in byte sized chunks, the internet primarily works with text and each base 64 character is one byte in size.
+
+This is why base 64 is important.
